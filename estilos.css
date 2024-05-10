@@ -9,7 +9,7 @@
 
 .bodyindx{
  background-image: url(img/Fondolog.jpg);
-    background-position: center center;
+  background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -56,7 +56,6 @@
   .menu{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
   }
 
   .bodymenu{
@@ -65,10 +64,10 @@
   }
 
   .menu-dashboard{
-    max-width: 150px;
+    max-width: 90px;
     height: 100vh;
     background-color: var(--menu) ;
-    padding: 20px;
+    padding: 25px;
     transition: max-width .3s ease;
   }
 
@@ -87,7 +86,7 @@
 
   .top-menu .logo span{
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     display: none;
   }
 
@@ -108,11 +107,11 @@
 
 .elementmenu .enlace {
     width: 100%;
-    padding: 20px 0 20px 17px;
+    padding: 30px 0 20px 17px;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     cursor:pointer;
     font-size: 20px;
     transition: all .3s ease;

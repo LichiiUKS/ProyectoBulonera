@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
-
-
 *{
     font-family: Rubik;
 }
 
-.bodyindx{
+.bodyIndex{
  background-image: url(img/Fondolog.jpg);
   background-position: center center;
 	background-repeat: no-repeat;
@@ -16,23 +13,31 @@
 	padding-left: 0px;  
 }
 
-.MenuPrincipal
+#Logo
 {
-    width: 40%;
-    background-color: rgba(196, 196, 196, 0.233);
-    padding: 1%;
-    border-radius: 3%;
-    margin: 2% 36% 2% 36%;
-    padding-top: 13%;
-    padding-bottom: 8%;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 3%;
+}
+ 
+ .MenuPrincipal
+ {
+     width: 40%;
+     background-color: rgba(196, 196, 196, 0.308);
+     padding: 1%;
+     border-radius: 3%;
+     margin: 40px 36% 10px 36%;
+     padding-top: 3%;
+     padding-bottom: 3%;
+ }
+
+.btn-danger{
+  margin-top: 9%;
 }
 
 .mb-3{
-    padding:2%;
-}
-
-.btn-primary{
-    margin-left: 42%;
+    padding:3%;
+    color: white;
 }
 
   .headermenu {

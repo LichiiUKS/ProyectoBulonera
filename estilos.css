@@ -76,6 +76,7 @@
     background-color: var(--menu) ;
     padding: 25px;
     transition: max-width .3s ease;
+    margin-top: 0px;
   }
 
   /*PARTE SUPERIOR DEL MENU*/
@@ -154,4 +155,25 @@
 
 .menu-dashboard.open .elementmenu .enlace span{
     opacity: 1;
+}
+
+/*NAVBAR*/
+
+.bg-body-tertiary{
+  display: flex;
+  position: fixed;
+  right: 0;
+  width: 78%;
+
+}
+
+.btn-outline-success{ 
+  background-color: white;
+  color: var(--azulopac);
+  border-color: var(--azulopac) ;
+}
+
+.btn-outline-success:hover{
+  background-color: var(--azulopac);
+  border-color: var(--azulopac);
 }

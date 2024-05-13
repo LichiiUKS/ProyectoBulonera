@@ -177,3 +177,19 @@
   background-color: var(--azulopac);
   border-color: var(--azulopac);
 }
+
+section{
+  display: none;
+}
+
+section:target{
+  display: block;
+}
+
+#client{  
+ position: fixed;
+ left: 10%;
+ top: 10%;
+ color: #000000;
+
+}

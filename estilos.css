@@ -63,6 +63,8 @@
   .menu{
     padding: 0;
     margin: 0;
+    z-index: 2;
+    position: fixed;
   }
 
   .bodymenu{
@@ -141,6 +143,7 @@
 
 .menu-dashboard.open{
     max-width: 300px;
+    z-index: 2;
 }
 
 .menu-dashboard.open .top-menu.logo span{
@@ -188,8 +191,37 @@ section:target{
 
 #client{  
  position: fixed;
- left: 10%;
+ left: 23%;
  top: 10%;
  color: #000000;
+ z-index: 1;
 
 }
+
+.enlace span{
+   text-decoration:double;
+   color: var(--bg-body);
+}
+
+#cuentcorr{  
+  position: fixed;
+  left: 23%;
+  top: 10%;
+  color: #000000;
+  z-index: 1;
+ 
+ }
+
+ #prod{  
+  position: fixed;
+  left: 23%;
+  top: 10%;
+  color: #000000;
+ }
+
+ #configcuenta{  
+  position: fixed;
+  left: 23%;
+  top: 10%;
+  color: #000000;
+ }

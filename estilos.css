@@ -230,4 +230,17 @@ section:target{
   color:#003053;
  }
 
+ /*TABLA CUENTA CORRIENTES*/
+ .table-striped
+{
+  border: solid 1px black
+}
+
+.Columnas
+{
+  border: solid 1px black;
+  width: 16%;
+}
+
+
  

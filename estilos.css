@@ -159,16 +159,24 @@
 
 /*NAVBAR*/
 
+h4{
+  color: var(--azulopac);
+  padding-right: 30px;
+}
+
+.nav-item{
+  padding-right: 20px;
+}
+
 .bg-body-tertiary{
   display: flex;
   position: fixed;
   right: 0;
   width: 78%;
-
 }
 
 .btn-outline-success{ 
-  background-color: white;
+  background-color:white;
   color: var(--azulopac);
   border-color: var(--azulopac) ;
 }
@@ -176,4 +184,19 @@
 .btn-outline-success:hover{
   background-color: var(--azulopac);
   border-color: var(--azulopac);
+}
+
+.CuentaCorriente{
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  color: black;
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas del mismo tamaño */
+  grid-gap: 10px;
+}
+
+.item{
+  background-color: #ccc;
+    padding: 20px;
+    text-align: center;
 }

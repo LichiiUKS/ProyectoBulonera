@@ -232,4 +232,26 @@ section:target{
   color:#003053;
  }
 
+ /*TABLA CUENTA CORRIENTES*/
+ .tablita
+{
+  border: solid 2px black;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #003053;
+  color: aliceblue;
+}
+
+.tablita tbody tr:nth-of-type(odd) {
+  background-color:#184463;
+}
+
+.Columnas
+{
+  border: solid 2px black;
+  width: 16%;
+  text-align: center;
+}
+
+
  

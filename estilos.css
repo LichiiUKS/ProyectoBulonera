@@ -253,5 +253,8 @@ section:target{
   text-align: center;
 }
 
-
+.btn-outline-primary{
+  position: fixed;
+  bottom: 8%;
+}
  

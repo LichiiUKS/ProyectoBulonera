@@ -25,17 +25,22 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Altas</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+               data-bs-whatever="@mdo" id="boton1" style="display: none;">Alta</button>
             </li>
-            <li class="nav-item">
               
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Modificacion</a>
+              <button type="button" class="btn btn-primary" id="boton2" style="display: none;">Modificacion</button>
             </li>
+
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary" id="boton3" style="display: none;">Agregar</button>
+            </li>
+
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -58,11 +63,11 @@
                <div class="elementmenu">
                   <div class="enlace"> 
                     <i class="bi bi-file-earmark-person"></i>
-                    <a href="#client" style="text-decoration: none;"><span>Clientes </span></a>
+                    <a href="#client" style="text-decoration: none;" onclick="cambiarBotones('opcion1')"><span>Clientes </span></a>
                   </div>
                   <div class="enlace"> 
                     <i class="bi bi-cart"></i>
-                    <a href="#cuentcorr" style="text-decoration: none;"><span>Cuentas corrientes</span></a>
+                    <a href="#cuentcorr" style="text-decoration: none;" onclick="cambiarBotones('opcion2')"><span>Cuentas corrientes</span></a>
                   </div>
 
                   <div class="enlace"> 
@@ -162,6 +167,9 @@
     <td class="Columnas" contenteditable="true">100</td>
     <td class="Columnas" contenteditable="true"></td>
 </tr>
+  <button type="button" class="btn btn-outline-primary" style="left: 52%;">Calcular deuda</button>
+  <button type="button" class="btn btn-outline-primary" style="left: 77%;">Agregar</button>
+  <button type="button" class="btn btn-outline-primary" style="left: 31%;">Eliminar</button>
       </TABLE>
 
     </section>
@@ -188,4 +196,28 @@
     console.log('Fila:', fila, 'Columna:', columna, 'Nuevo valor:', nuevoValor);
 });
   </script>
+
+<script>
+  function cambiarBotones(opcion)
+  {
+    
+    // Ocultar todos los botones
+    document.getElementById("boton1").style.display = "none";
+    document.getElementById("boton2").style.display = "none";
+    
+    // Mostrar los botones correspondientes a la opción seleccionada
+    switch(opcion)
+    {
+      case "opcion1":
+        document.getElementById("boton1").style.display = "block";
+        document.getElementById("boton2").style.display = "block";
+        document.getElementById("boton3").style.display = "none";
+        break;
+      case "opcion2":
+        document.getElementById("boton3").style.display = "block";
+        break;
+    }
+  }
+  </script>
+
 </html>

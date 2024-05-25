@@ -269,12 +269,13 @@ section:target{
 }
 
 /*FORMULARIO CONFIGURACION*/
-.mb-3{
+.mb-3config{
   position: fixed;
   left: 37%;
 }
 
-.form-label{
+.label2{
+  margin-bottom: 10px;
   border-radius: 2px;
   background-color: #003053;
   color: white;

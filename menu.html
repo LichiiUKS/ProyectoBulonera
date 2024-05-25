@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="estilos.css">
     <!--JS-->
     <script src="./js/app.js" defer></script>
+    <script src="./js/prueba.js"></script>
   </head>
   <body class="bodymenu">
 
@@ -204,12 +205,12 @@
     </section>
 
     <section id="configcuenta">
-      <div class="mb-3" style="top: 20%;">
-        <label for="formGroupExampleInput" class="form-label">USUARIO</label>
+      <div class="mb-3config" style="top: 20%;">
+        <label for="formGroupExampleInput" class="label2">USUARIO</label>
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre de usuario actual">
       </div>
-      <div class="mb-3" style="top: 45%;">
-        <label for="formGroupExampleInput2" class="form-label">CONTRASEÑA</label>
+      <div class="mb-3config" style="top: 45%;">
+        <label for="formGroupExampleInput2" class="label2">CONTRASEÑA</label>
         <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Contraseña actual">
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal2" >ACEPTAR</button>
       </div>
@@ -274,40 +275,6 @@
     var nuevoValor = event.target.innerText;
     console.log('Fila:', fila, 'Columna:', columna, 'Nuevo valor:', nuevoValor);
 });
-  </script>
-
-<script>
-  function cambiarBotones(opcion)
-  {
-    
-    // Ocultar todos los botones
-    document.getElementById("boton1").style.display = "none";
-    document.getElementById("boton2").style.display = "none";
-    document.getElementById("boton3").style.display = "none";
-    document.getElementById("boton4").style.display = "none";
-    document.getElementById("boton5").style.display = "none";
-    
-    // Mostrar los botones correspondientes a la opción seleccionada
-    switch(opcion)
-    {
-      case "opcion1":
-        document.getElementById("boton1").style.display = "block";
-        document.getElementById("boton2").style.display = "block";
-        document.getElementById("boton3").style.display = "none";
-        document.getElementById("boton4").style.display = "none";
-        document.getElementById("boton5").style.display = "none";
-        break;
-      case "opcion2":
-        document.getElementById("boton4").style.display = "block";
-        document.getElementById("boton5").style.display = "block";
-        break;
-        case "opcion3":
-        document.getElementById("boton3").style.display = "none";
-        document.getElementById("boton4").style.display = "none";
-        document.getElementById("boton5").style.display = "none";
-        break;
-      }
-  }
   </script>
 
 </html>

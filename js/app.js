@@ -2,6 +2,9 @@ const toggle= document.querySelector(".toggle")
 const menudashboard = document.querySelector(".menu-dashboard")
 const iconomenu = document.querySelector("i")
 const enlacemenu = document.querySelectorAll(".enlace")
+const modal = document.getElementById('confirmodif');
+const cerrarBtn = document.getElementsByClassName('close')[0];
+const modifbtn = document.getElementById('modif')
 
 /*Romani Tobias*/
 toggle.addEventListener("click",()=>{
@@ -22,6 +25,18 @@ enlacemenu.forEach(enlace => {
         menudashboard.classList.add("open")
         iconomenu.classList.replace("bx-menu", "bx-x")
     })
-})
+}),
 
 )
+
+function mostrarconfirmmodif() {
+    modal.style.display = 'block';
+}
+
+function confirmodif() {
+    modal.style.display= 'none';
+}
+
+document.getElementById('boton2').addEventListener('click', mostrarconfirmmodif);
+cerrarBtn.addEventListener('click', confirmodif);
+

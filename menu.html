@@ -85,7 +85,7 @@
 
                   <div class="enlace">
                     <i class="bi bi-gear "></i>
-                    <a href="#configcuenta" style="text-decoration: none;"><span>configuracion de cuenta</span></a>
+                    <a href="#configcuenta" style="text-decoration: none;" onclick="cambiarBotones('opcion4')"><span>configuracion de cuenta</span></a>
                   </div>
 
                   <div class="enlace">
@@ -146,33 +146,51 @@
       <TABLE class="table tablita">
         <tr class="Columnas ">
           <th class="Columnas">Fecha operación</th>
+          <th class="Columnas">Detalle</th>
+          <th class="Columnas">Cantidad</th>
           <th class="Columnas">Debe</th>
           <th class="Columnas">Haber</th>
+          <th class="Columnas">Saldo</th>
         </tr>
         <tr>
           <td class="Columnas" contenteditable="true">15/05/2024</td>
+          <td class="Columnas" contenteditable="true">Tornillos</td>
+          <td class="Columnas" contenteditable="true">3</td>
           <td class="Columnas" contenteditable="true">1000</td>
+          <td class="Columnas" contenteditable="true"></td>
           <td class="Columnas" contenteditable="true"></td>
         </tr>
         <tr>
           <td class="Columnas" contenteditable="true">16/05/2024</td>
           <td class="Columnas" contenteditable="true"></td>
+          <td class="Columnas" contenteditable="true"></td>
+          <td class="Columnas" contenteditable="true"></td>
           <td class="Columnas" contenteditable="true">600</td>
+          <td class="Columnas" contenteditable="true"></td>
       </tr>
       <tr>
         <td class="Columnas" contenteditable="true">17/05/2024</td>
         <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
         <td class="Columnas" contenteditable="true">300</td>
+        <td class="Columnas" contenteditable="true"></td>
     </tr>
     <tr>
       <td class="Columnas" contenteditable="true">18/05/2024</td>
+      <td class="Columnas" contenteditable="true"></td>
+      <td class="Columnas" contenteditable="true"></td>
       <td class="Columnas" contenteditable="true">500</td>
+      <td class="Columnas" contenteditable="true"></td>
       <td class="Columnas" contenteditable="true"></td>
   </tr>
   <tr>
     <td class="Columnas" contenteditable="true">19/05/2024</td>
     <td class="Columnas" contenteditable="true"></td>
+    <td class="Columnas" contenteditable="true"></td>
+    <td class="Columnas" contenteditable="true"></td>
     <td class="Columnas" contenteditable="true">100</td>
+    <td class="Columnas" contenteditable="true"></td>
 </tr>
       </TABLE>
 
@@ -184,9 +202,42 @@
     </section>
 
     <section id="configcuenta">
-      configuracion de cuenta
-
+      <div class="mb-3" style="top: 20%;">
+        <label for="formGroupExampleInput" class="form-label">USUARIO</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre de usuario actual">
+      </div>
+      <div class="mb-3" style="top: 45%;">
+        <label for="formGroupExampleInput2" class="form-label">CONTRASEÑA</label>
+        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Contraseña actual">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal2" >ACEPTAR</button>
+      </div>
     </section>
+    <!-- Modal de la configuracion -->
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modificacion de usuario</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body body-modal-config">
+            <label class="labelConfig">Nuevo nombre de usuario</label>
+            <input class="inputConfig" type="text" placeholder="Usuario">
+            <br>
+            <label class="labelConfig">Nueva Contraseña</label>
+            <input class="inputConfig" type="text" placeholder="Contraseña">
+            <br>
+            <label class="labelConfig">Confirmar Contraseña</label>
+            <input class="inputConfig" type="text" placeholder="Contraseña">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="Salir">
 
     </section>
@@ -227,7 +278,12 @@
         document.getElementById("boton4").style.display = "block";
         document.getElementById("boton5").style.display = "block";
         break;
-    }
+        case "opcion3":
+        document.getElementById("boton3").style.display = "none";
+        document.getElementById("boton4").style.display = "none";
+        document.getElementById("boton5").style.display = "none";
+        break;
+      }
   }
   </script>
 

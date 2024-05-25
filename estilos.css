@@ -63,7 +63,6 @@
   .menu{
     padding: 0;
     margin: 0;
-    z-index: 2;
     position: fixed;
   }
 
@@ -247,9 +246,10 @@ section:target{
 {
   border: solid 2px black;
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   background-color: #003053;
   color: aliceblue;
+  table-layout: fixed;
 }
 
 .tablita tbody tr:nth-of-type(odd) {
@@ -266,5 +266,44 @@ section:target{
 .btn-outline-primary{
   position: fixed;
   bottom: 8%;
+}
+
+/*FORMULARIO CONFIGURACION*/
+.mb-3{
+  position: fixed;
+  left: 37%;
+}
+
+.form-label{
+  border-radius: 2px;
+  background-color: #003053;
+  color: white;
+  position:relative;
+  text-align: center;
+  width: 400px;
+  padding: 5%;
+}
+
+.btn-success{
+  margin-top: 15%;
+  width:400px ;
+}
+
+.inputConfig{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position:absolute;
+  right: 3%;
+  text-align: center;
+}
+
+.labelConfig{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#modal2{
+  position: absolute;
+  top: 1%;
 }
  

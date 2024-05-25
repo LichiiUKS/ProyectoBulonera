@@ -121,7 +121,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               <button type="button" class="btn btn-primary">Cargar</button>
             </div>
           </div>
@@ -176,6 +176,8 @@
 </tr>
       </TABLE>
 
+      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-plus-circle"></i></button>
+      
     </section>
 
     <section id="prod">
@@ -190,6 +192,28 @@
     <section id="Salir">
 
     </section>
+
+
+
+    <!--BTN MODIFICACION-->
+  
+  <div id="confirmodif" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Confirme su contraseña</h5>
+          <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" placeholder="Ingrese su contraseña para poder modificar" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Modificar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </body>
 
   <script>
@@ -223,7 +247,6 @@
         document.getElementById("boton5").style.display = "none";
         break;
       case "opcion2":
-        document.getElementById("boton3").style.display = "block";
         document.getElementById("boton4").style.display = "block";
         document.getElementById("boton5").style.display = "block";
         break;

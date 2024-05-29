@@ -111,11 +111,23 @@
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
               </div>
               <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Nombre y Apellido</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm">Razon Social</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
               </div>
               <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Fecha de ingreso</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">CUIT</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Domicilio</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Responsabilidad frente a IVA</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
               </div>
 
@@ -137,8 +149,85 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <!--Mallarino Lisandro-->
+    <!--Mallarino Lisandro  CLIENTES-->
+
+        <!--BTN MODIFICACION-->
+  
+  <div id="confirmodif" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Confirme su contraseña</h5>
+          <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" placeholder="Ingrese su contraseña para poder modificar" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="btnmodificar">Modificar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <section id="client">
+      <TABLE class="table tablita">
+        <tr class="Columnas">
+          <th class="Columnas">DNI</th>
+          <th class="Columnas">Razon Social</th>
+          <th class="Columnas">Fecha de ingreso</th>
+          <th class="Columnas">CUIT</th>
+          <th class="Columnas">Domicilio</th>
+          <th class="Columnas">Responsabilidad frente a IVA</th>
+        </tr>
+
+        <tr>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+        </tr>
+
+        <tr>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+        </tr>
+
+        <tr>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+        </tr>
+
+        <tr>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+         </tr>
+
+        <tr>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+          <td id="columclient" class="Columnas columnclient" contenteditable="false"></td>
+        </tr>
+   
+    </table>
+
 
     </section>
     <section id="cuentcorr">CLIENTE Nº 0056
@@ -247,24 +336,6 @@
 
 
 
-    <!--BTN MODIFICACION-->
-  
-  <div id="confirmodif" class="modal" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Confirme su contraseña</h5>
-          <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <input type="text" class="form-control" placeholder="Ingrese su contraseña para poder modificar" aria-label="Username" aria-describedby="addon-wrapping">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Modificar</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   </body>
 

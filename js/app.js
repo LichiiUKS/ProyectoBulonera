@@ -41,7 +41,6 @@ document.getElementById('boton2').addEventListener('click', mostrarconfirmmodif)
 cerrarBtn.addEventListener('click', confirmodif);
 
 
-document.getElementsByClassName(`Columnas`);
 btnmodificar.addEventListener(`click`, habilitarmodif);
 
 function habilitarmodif() {

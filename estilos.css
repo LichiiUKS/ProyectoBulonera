@@ -31,6 +31,7 @@
      margin: 40px 36% 10px 36%;
      padding-top: 3%;
      padding-bottom: 1%;
+    
  }
 
 .btn-danger{
@@ -60,11 +61,21 @@
 
 }
 
+
+
   .menu{
     padding: 0;
     margin: 0;
     position: fixed;
+    background-image: url(img/fondomenu.jpg);
+    background-position: center center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+	  padding-left: 0px;  
   }
+  
+ 
 
   .bodymenu{
     font-family: rubik, sans-serif;
@@ -168,7 +179,14 @@
   position: fixed;
   right: 0;
   width: 78%;
+}
 
+
+.titulonavbar{
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 5px;
+  color: #00095c;
 }
 
 .btn-outline-success{ 

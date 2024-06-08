@@ -231,11 +231,10 @@ section:target{
 
 #cuentcorr{  
   position: fixed;
-  left: 23%;
+  left: 10%;
   top: 10%;
   color: #000000;
-  z-index: 1;
-
+  z-index: -2;
  }
 
  #prod{  

@@ -22,11 +22,11 @@
 }
 
 .MenuPrincipal {
-  width: 80%;
+  width: 40%;
   background-color: rgba(196, 196, 196, 0.308);
-  padding: 2%;
+  padding: 1%;
   border-radius: 3%;
-  margin: 40px auto;
+  margin: 40px 36% 10px 36%;
   padding-top: 3%;
   padding-bottom: 1%;
 }
@@ -175,6 +175,7 @@
   background-color: rgb(173, 222, 236);
   padding: 8px;
   border-radius: 5px;
+  left: 20%;
   color: #00095c;
 }
 
@@ -198,10 +199,11 @@ section:target {
 }
 
 #client {  
-  position: fixed;
+  position:fixed;
   left: 10%;
   top: 10%;
   color: #000000;
+  z-index: -1;
 }
 
 .enlace span {

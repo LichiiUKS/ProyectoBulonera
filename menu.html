@@ -1,157 +1,162 @@
 <!DOCTYPE html>
 <html lang="en" class="menu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--CSS-->
-    <link rel="stylesheet" href="estilos.css">
-    <!--JS-->
-    <script src="./js/app.js" defer></script>
-  </head>
-  <body class="bodymenu">
 
-    <!--Navbar  Romani Tobias-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <h4 class="titulonavbar">Bulonera Romani</h4>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="estilos.css">
+  <!--JS-->
+  <script src="./js/app.js" defer></script>
+</head>
 
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <button type="button" class="btn btn-navbar" data-bs-toggle="modal" data-bs-target="#exampleModal"
-               data-bs-whatever="@mdo" id="boton1" style="display: none;">Alta</button>
-            </li>
-              
-            <li class="nav-item">
-              <button type="button" class="btn btn-navbar" id="boton2" style="display: none;">Modificacion</button>
-            </li>
+<body class="bodymenu">
 
-            <li class="nav-item">
-              <button type="button" class="btn btn-navbar" id="boton3" style="display: none;">Agregar</button>
-            </li>
+  <!--Navbar  Romani Tobias-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <h4 class="titulonavbar">Bulonera Romani</h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <li class="nav-item">
-              <button type="button" class="btn btn-navbar" id="boton4" style="display: none;">Eliminar</button>
-            </li>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button type="button" class="btn btn-navbar" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo" id="boton1" style="display: none;">Alta</button>
+          </li>
 
-            <li class="nav-item">
-              <button type="button" class="btn btn-navbar" id="boton5" style="display: none;">Calcular deuda</button>
-            </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-navbar" id="boton2" style="display: none;">Modificacion</button>
+          </li>
 
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Escribe..." aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+          <li class="nav-item">
+            <button type="button" class="btn btn-navbar" id="boton3" style="display: none;">Agregar</button>
+          </li>
+
+          <li class="nav-item">
+            <button type="button" class="btn btn-navbar" id="boton4" style="display: none;">Eliminar</button>
+          </li>
+
+          <li class="nav-item">
+            <button type="button" class="btn btn-navbar" id="boton5" style="display: none;">Calcular deuda</button>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Escribe..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Dashboard  Romani Tobias-->
+  <div class="menu-dashboard">
+    <div class="top-menu">
+      <div class="logo">
+        <span>Bulonera Romani </span>
+      </div>
+      <div class="toggle">
+        <i class="bi bi-list"></i>
+      </div>
+    </div>
+    <div class="elementmenu">
+      <div class="enlace">
+        <i class="bi bi-file-earmark-person"></i>
+        <a href="#client" style="text-decoration: none;" onclick="cambiarBotones('opcion1')"><span>Clientes </span></a>
+      </div>
+      <div class="enlace">
+        <i class="bi bi-cart"></i>
+        <a href="#cuentcorr" style="text-decoration: none;" onclick="cambiarBotones('opcion2')"><span>Cuentas
+            corrientes</span></a>
+      </div>
+
+      <div class="enlace">
+        <i class="bi bi-screwdriver"></i>
+        <a href="#prod" style="text-decoration: none;"><span>productos</span></a>
+
+      </div>
+
+      <div class="enlace">
+        <i class="bi bi-gear "></i>
+        <a href="#configcuenta" style="text-decoration: none;" onclick="cambiarBotones('opcion4')"><span>configuracion
+            de cuenta</span></a>
+      </div>
+
+      <div class="enlace">
+        <i class="bi bi-box-arrow-left"></i>
+        <a href="index.html" style="text-decoration: none;"><span>Salir</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!--Altas clientes TobiasRomani-->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Altas Clientes</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">DNI</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm" minlength="8" maxlength="8" required pattern="[0-9]+">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Razon Social</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm" maxlength="35" required pattern="[a-zA-Z ]+">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Fecha de ingreso</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">CUIT</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm" required pattern="[0-9-]+">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Domicilio</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm" required pattern="[a-zA-Z0-9 ]+">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Responsabilidad frente a IVA</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm" required pattern="[a-zA-Z ]+">
+          </div>
+
           </form>
         </div>
-      </div>
-    </nav>
-      <!--Dashboard  Romani Tobias-->
-      <div class="menu-dashboard">
-        <div class="top-menu">
-          <div class="logo">
-             <span>Bulonera Romani </span>
-              </div>
-                 <div class="toggle">
-                  <i class="bi bi-list"></i>
-                 </div>
-              </div>
-               <div class="elementmenu">
-                  <div class="enlace"> 
-                    <i class="bi bi-file-earmark-person"></i>
-                    <a href="#client" style="text-decoration: none;" onclick="cambiarBotones('opcion1')"><span>Clientes </span></a>
-                  </div>
-                  <div class="enlace"> 
-                    <i class="bi bi-cart"></i>
-                    <a href="#cuentcorr" style="text-decoration: none;" onclick="cambiarBotones('opcion2')"><span>Cuentas corrientes</span></a>
-                  </div>
-
-                  <div class="enlace"> 
-                    <i class="bi bi-screwdriver"></i>
-                    <a href="#prod" style="text-decoration: none;"><span>productos</span></a>
-                    
-                  </div>
-
-                  <div class="enlace">
-                    <i class="bi bi-gear "></i>
-                    <a href="#configcuenta" style="text-decoration: none;" onclick="cambiarBotones('opcion4')"><span>configuracion de cuenta</span></a>
-                  </div>
-
-                  <div class="enlace">
-                    <i class="bi bi-box-arrow-left"></i>
-                    <a href="index.html" style="text-decoration: none;"><span>Salir</span></a>
-                </div>
-              </div>
-      </div>
-
-      <!--Altas clientes TobiasRomani-->
-
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Altas Clientes</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">DNI</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-              </div>
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Razon Social</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-              </div>
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Fecha de ingreso</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-              </div>
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">CUIT</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-              </div>
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Domicilio</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-              </div>
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Responsabilidad frente a IVA</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-              </div>
-
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Cargar</button>
-            </div>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Cargar</button>
         </div>
       </div>
+    </div>
+  </div>
 
-       <!-- baja clientes Tobias Romani -->
+  <!-- baja clientes Tobias Romani -->
 
-      
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!--Mallarino Lisandro  CLIENTES-->
 
-        <!--BTN MODIFICACION-->
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!--Mallarino Lisandro  CLIENTES-->
+
+  <!--BTN MODIFICACION-->
+
   <div id="confirmodif" class="modal" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -160,7 +165,8 @@
           <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <input type="text" class="form-control" placeholder="Ingrese su contraseña para poder modificar" aria-label="Username" aria-describedby="addon-wrapping">
+          <input type="text" class="form-control" placeholder="Ingrese su contraseña para poder modificar"
+            aria-label="Username" aria-describedby="addon-wrapping" minlength="3" required pattern="[a-zA-Z0-9]+>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" id="btnmodificar">Modificar</button>
@@ -169,97 +175,97 @@
     </div>
   </div>
 
-    <section id="client">
-      CLIENTES REGISTRADOS
-      <br>
-      <TABLE class="table tablita">
-        <tr class="Columnas">
-          <th class="Columnas">DNI</th>
-          <th class="Columnas">Razon Social</th>
-          <th class="Columnas">Fecha de ingreso</th>
-          <th class="Columnas">CUIT</th>
-          <th class="Columnas">Domicilio</th>
-          <th class="Columnas">Condición IVA</th>
-        </tr>
+  <section id="client">
+    CLIENTES REGISTRADOS
+    <br>
+    <TABLE class="table tablita">
+      <tr class="Columnas">
+        <th class="Columnas">DNI</th>
+        <th class="Columnas">Razon Social</th>
+        <th class="Columnas">Fecha de ingreso</th>
+        <th class="Columnas">CUIT</th>
+        <th class="Columnas">Domicilio</th>
+        <th class="Columnas">Condición IVA</th>
+      </tr>
 
-        <tr id="columclient" contenteditable="false">
-          <td class="Columnas" contenteditable="false">45.047.374</td>
-          <td class="Columnas" contenteditable="false">Romani Tobias</td>
-          <td class="Columnas" contenteditable="false">30/05/2024</td>
-          <td class="Columnas" contenteditable="false">20-45047354-8</td>
-          <td class="Columnas" contenteditable="false">Eva Perón 255</td>
-          <td class="Columnas" contenteditable="false">Monotributo</td>
-        </tr>
+      <tr id="columclient" contenteditable="false">
+        <td class="Columnas" contenteditable="false">45.047.374</td>
+        <td class="Columnas" contenteditable="false">Romani Tobias</td>
+        <td class="Columnas" contenteditable="false">30/05/2024</td>
+        <td class="Columnas" contenteditable="false">20-45047354-8</td>
+        <td class="Columnas" contenteditable="false">Eva Perón 255</td>
+        <td class="Columnas" contenteditable="false">Monotributo</td>
+      </tr>
 
-        <tr>
-          <td class="Columnas" contenteditable="false">45.616.591</td>
-          <td class="Columnas" contenteditable="false">Mallarino Lisandro</td>
-          <td class="Columnas" contenteditable="false">31/05/2024</td>
-          <td class="Columnas" contenteditable="false">20-45616591-6</td>
-          <td class="Columnas" contenteditable="false">Carmen Gadea 680</td>
-          <td class="Columnas" contenteditable="false">IVA Inscripto</td>
-        </tr>
+      <tr>
+        <td class="Columnas" contenteditable="false">45.616.591</td>
+        <td class="Columnas" contenteditable="false">Mallarino Lisandro</td>
+        <td class="Columnas" contenteditable="false">31/05/2024</td>
+        <td class="Columnas" contenteditable="false">20-45616591-6</td>
+        <td class="Columnas" contenteditable="false">Carmen Gadea 680</td>
+        <td class="Columnas" contenteditable="false">IVA Inscripto</td>
+      </tr>
 
-        <tr>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-        </tr>
+      <tr>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+      </tr>
 
-        <tr>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-         </tr>
+      <tr>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+      </tr>
 
-        <tr>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-          <td class="Columnas" contenteditable="false"></td>
-        </tr>
-   
+      <tr>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+      </tr>
+
     </table>
-    </section>
+  </section>
 
-    <section id="MenuPrincipal">
-    </section>
+  <section id="MenuPrincipal">
+  </section>
 
-    <section id="cuentcorr">CLIENTE Nº 0056
-      <br>
-      MALLARINO LISANDRO
-      <TABLE class="table tablita">
-        <tr class="Columnas ">
-          <th class="Columnas">Fecha operación</th>
-          <th class="Columnas">Detalle</th>
-          <th class="Columnas">Cantidad</th>
-          <th class="Columnas">Debe</th>
-          <th class="Columnas">Haber</th>
-          <th class="Columnas">Saldo</th>
-        </tr>
-        <tr>
-          <td class="Columnas" contenteditable="true">15/05/2024</td>
-          <td class="Columnas" contenteditable="true">Tornillos</td>
-          <td class="Columnas" contenteditable="true">3</td>
-          <td class="Columnas" contenteditable="true">1000</td>
-          <td class="Columnas" contenteditable="true"></td>
-          <td class="Columnas" contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td class="Columnas" contenteditable="true">16/05/2024</td>
-          <td class="Columnas" contenteditable="true"></td>
-          <td class="Columnas" contenteditable="true"></td>
-          <td class="Columnas" contenteditable="true"></td>
-          <td class="Columnas" contenteditable="true">600</td>
-          <td class="Columnas" contenteditable="true"></td>
+  <section id="cuentcorr">CLIENTE Nº 0056
+    <br>
+    MALLARINO LISANDRO
+    <TABLE class="table tablita">
+      <tr class="Columnas ">
+        <th class="Columnas">Fecha operación</th>
+        <th class="Columnas">Detalle</th>
+        <th class="Columnas">Cantidad</th>
+        <th class="Columnas">Debe</th>
+        <th class="Columnas">Haber</th>
+        <th class="Columnas">Saldo</th>
+      </tr>
+      <tr>
+        <td class="Columnas" contenteditable="true">15/05/2024</td>
+        <td class="Columnas" contenteditable="true">Tornillos</td>
+        <td class="Columnas" contenteditable="true">3</td>
+        <td class="Columnas" contenteditable="true">1000</td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="Columnas" contenteditable="true">16/05/2024</td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true">600</td>
+        <td class="Columnas" contenteditable="true"></td>
       </tr>
       <tr>
         <td class="Columnas" contenteditable="true">17/05/2024</td>
@@ -268,87 +274,87 @@
         <td class="Columnas" contenteditable="true"></td>
         <td class="Columnas" contenteditable="true">300</td>
         <td class="Columnas" contenteditable="true"></td>
-    </tr>
-    <tr>
-      <td class="Columnas" contenteditable="true">18/05/2024</td>
-      <td class="Columnas" contenteditable="true"></td>
-      <td class="Columnas" contenteditable="true"></td>
-      <td class="Columnas" contenteditable="true">500</td>
-      <td class="Columnas" contenteditable="true"></td>
-      <td class="Columnas" contenteditable="true"></td>
-  </tr>
-  <tr>
-    <td class="Columnas" contenteditable="true">19/05/2024</td>
-    <td class="Columnas" contenteditable="true"></td>
-    <td class="Columnas" contenteditable="true"></td>
-    <td class="Columnas" contenteditable="true"></td>
-    <td class="Columnas" contenteditable="true">100</td>
-    <td class="Columnas" contenteditable="true"></td>
-</tr>
-      </TABLE>
+      </tr>
+      <tr>
+        <td class="Columnas" contenteditable="true">18/05/2024</td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true">500</td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="Columnas" contenteditable="true">19/05/2024</td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true">100</td>
+        <td class="Columnas" contenteditable="true"></td>
+      </tr>
+    </TABLE>
 
-      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-plus-circle"></i></button>
-      
-    </section>
+    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-plus-circle"></i></button>
 
-    <section id="prod">
-      productos
+  </section>
 
-    </section>
+  <section id="prod">
+    productos
 
-    <section id="configcuenta">
-      <div class="mb-3config" style="top: 20%;">
-        <label for="formGroupExampleInput" class="label2">USUARIO</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre de usuario actual">
-      </div>
-      <div class="mb-3config" style="top: 45%;">
-        <label for="formGroupExampleInput2" class="label2">CONTRASEÑA</label>
-        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Contraseña actual">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal2" >ACEPTAR</button>
-      </div>
-    </section>
-    <!-- Modal de la configuracion -->
-    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modificacion de usuario</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body body-modal-config">
-            <label class="labelConfig">Nuevo nombre de usuario</label>
-            <input class="inputConfig" type="text" placeholder="Usuario">
-            <br>
-            <label class="labelConfig">Nueva Contraseña</label>
-            <input class="inputConfig" type="text" placeholder="Contraseña">
-            <br>
-            <label class="labelConfig">Confirmar Contraseña</label>
-            <input class="inputConfig" type="text" placeholder="Contraseña">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Guardar cambios</button>
-          </div>
+  </section>
+
+  <section id="configcuenta">
+    <div class="mb-3config" style="top: 20%;">
+      <label for="formGroupExampleInput" class="label2">USUARIO</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre de usuario actual">
+    </div>
+    <div class="mb-3config" style="top: 45%;">
+      <label for="formGroupExampleInput2" class="label2">CONTRASEÑA</label>
+      <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Contraseña actual" minlength="3" required pattern="[a-zA-Z0-9]+">
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal2">ACEPTAR</button>
+    </div>
+  </section>
+  <!-- Modal de la configuracion -->
+  <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modificacion de usuario</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body body-modal-config">
+          <label class="labelConfig">Nuevo nombre de usuario</label>
+          <input class="inputConfig" type="text" placeholder="Usuario" minlength="5" maxlength="25" required pattern="[^\s]+">
+          <br>
+          <label class="labelConfig">Nueva Contraseña</label>
+          <input class="inputConfig" type="text" placeholder="Contraseña" minlength="3" required pattern="[a-zA-Z0-9]+">
+          <br>
+          <label class="labelConfig">Confirmar Contraseña</label>
+          <input class="inputConfig" type="text" placeholder="Contraseña" minlength="3" required pattern="[a-zA-Z0-9]+">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <section id="Salir">
+  <section id="Salir">
 
-    </section>
-
-
+  </section>
 
 
-  </body>
 
-  <script>
-    document.getElementById('tabla').addEventListener('input', function(event) {
+
+</body>
+
+<script>
+  document.getElementById('tabla').addEventListener('input', function (event) {
     var fila = event.target.parentNode.rowIndex;
     var columna = event.target.cellIndex;
     var nuevoValor = event.target.innerText;
     console.log('Fila:', fila, 'Columna:', columna, 'Nuevo valor:', nuevoValor);
-});
-  </script>
+  });
+</script>
 
 </html>

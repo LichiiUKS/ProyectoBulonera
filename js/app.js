@@ -66,6 +66,9 @@ function cambiarBotones(opcion)
     document.getElementById("boton3").style.display = "none";
     document.getElementById("boton4").style.display = "none";
     document.getElementById("boton5").style.display = "none";
+    document.getElementById("boton6").style.display = "none";
+
+
     
     // Mostrar los botones correspondientes a la opción seleccionada
     switch(opcion)
@@ -80,6 +83,7 @@ function cambiarBotones(opcion)
       case "opcion2":
         document.getElementById("boton4").style.display = "block";
         document.getElementById("boton5").style.display = "block";
+        document.getElementById("boton6").style.display = "block";
         break;
         case "opcion3":
         document.getElementById("boton3").style.display = "none";

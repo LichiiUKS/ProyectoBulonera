@@ -110,7 +110,7 @@
 .top-menu .toggle {
   width: 30px;
   height: 20px;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;  
@@ -163,6 +163,7 @@
 .menu-dashboard.open .elementmenu .enlace span {
   opacity: 1;
 }
+
 
 .bg-body-tertiary {
   display: flex;
@@ -225,9 +226,10 @@ section:target {
 
 #prod {  
   position: fixed;
-  left: 23%;
+  left: 10%;
   top: 10%;
   color: #000000;
+  z-index: -1;
 }
 
 #configcuenta {  

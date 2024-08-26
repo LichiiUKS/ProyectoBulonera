@@ -51,6 +51,10 @@
           <li class="nav-item">
             <button type="button" class="btn btn-navbar" id="boton6" style="display: none;">Generar remito</button>
           </li>
+
+          <li class="nav-item">
+            <button type="button" class="btn btn-navbar" id="boton7" style="display: none;">Importar productos</button>
+          </li>
           
         </ul>
         <form class="d-flex" role="search">
@@ -83,7 +87,7 @@
 
       <div class="enlace">
         <i class="bi bi-screwdriver"></i>
-        <a href="#prod" style="text-decoration: none;"><span>productos</span></a>
+        <a href="#prod" style="text-decoration: none;" onclick="cambiarBotones('opcion3')"><span>Productos</span></a>
 
       </div>
 
@@ -95,7 +99,7 @@
 
       <div class="enlace">
         <i class="bi bi-box-arrow-left"></i>
-        <a href="index.html" style="text-decoration: none;"><span>Salir</span></a>
+        <a href="index.html" style="text-decoration: none;" ><span>Salir</span></a>
       </div>
     </div>
   </div>
@@ -269,7 +273,37 @@
   </section>
 
   <section id="prod">
-    productos
+    <br>
+    <TABLE class="table tablita">
+      <tr class="Columnas ">
+        <th class="Columnas">Código</th>
+        <th class="Columnas">Categoría</th>
+        <th class="Columnas">Descripcion</th>
+        <th class="Columnas">Precio compra</th>
+        <th class="Columnas">Precio venta</th>
+      </tr>
+      <tr>
+        <td class="Columnas" contenteditable="true">01.AN18</td>
+        <td class="Columnas" contenteditable="true">Arandela pulida 1/8</td>
+        <td class="Columnas" contenteditable="true">Arandela</td>
+        <td class="Columnas" contenteditable="true">7.680,88</td>
+        <td class="Columnas" contenteditable="true">7.707,90</td>
+      </tr>
+      <tr>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+        <td class="Columnas" contenteditable="true"></td>
+      </tr>
+    </TABLE>
 
   </section>
 

@@ -124,7 +124,8 @@
 
 .top-menu .toggle i {
   font-size: 35px;
-}
+} 
+
 
 .elementmenu .enlace {
   width: 130%;
@@ -159,15 +160,18 @@
 
 .menu-dashboard.open .top-menu .logo span {
   display: block;
+  margin-top: 0px;
 }
 
 .menu-dashboard.open .elementmenu .enlace {
   width: auto;
-  padding: 35px 0px;
+  padding: 30 px 0px;
+
 }
 
 .menu-dashboard.open .elementmenu .enlace span {
   opacity: 1;
+  padding: 50px 5px;
 }
 
 

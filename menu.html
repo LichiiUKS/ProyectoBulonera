@@ -45,11 +45,11 @@
           </li>
 
           <li class="nav-item">
-            <button type="button" class="btn btn-navbar" id="boton5" style="display: none;">Calcular deuda</button>
+            <button type="button" class="btn btn-navbar" id="boton5" style="display: none;">Imprimir deuda</button>
           </li>
 
           <li class="nav-item">
-            <button type="button" class="btn btn-navbar" id="boton6"  data-bs-target="#remito" data-bs-toggle="modal" style="display: none;">Generar remito</button>
+            <button type="button" class="btn btn-navbar" id="boton6" data-bs-target="#CancelarDeuda" data-bs-toggle="modal" style="display: none;">Cancelar deuda</button>
           </li>
 
           <li class="nav-item">
@@ -64,6 +64,25 @@
       </div>
     </div>
   </nav>
+
+  <div class="modal fade" id="CancelarDeuda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="margin-left: 10%;">IMPORTE A INGRESAR</h1>
+        </div>
+        <div class="modal-body">
+          <span class="currency-symbol">$</span>
+          <input class="importe" type="text" placeholder="0.00" minlength="3" required pattern="^\d+(\.\d{1,2})?$">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
+          <button type="button" class="btn btn-primary" style="margin-left: 10%;">CONFIRMAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--Dashboard  Romani Tobias-->
   <div class="menu-dashboard">
     <div class="top-menu">
@@ -106,7 +125,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">REMITO</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -334,7 +353,7 @@
       </tr>
     </TABLE>
 
-    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-plus-circle"></i></button>
+    <button type="button" class="btn btn-outline-secondary" data-bs-target="#remito" data-bs-toggle="modal"><i class="bi bi-plus-circle"></i></button>
 
   </section>
 
@@ -381,7 +400,7 @@
     <div class="mb-3config" style="top: 45%;">
       <label for="formGroupExampleInput2" class="label2">CONTRASEÑA</label>
       <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Contraseña actual" minlength="3" required pattern="[a-zA-Z0-9]+">
-      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal2">ACEPTAR</button>
+      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#Modal2" id="btnAcept">ACEPTAR</button>
     </div>
   </section>
   <!-- Modal de la configuracion -->

@@ -35,6 +35,12 @@
   margin-top: 5%;
 }
 
+#boton6:hover{
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
 .mb-3 {
   padding: 3%;
   color: white;
@@ -190,9 +196,14 @@
   border-color: var(--azulopac);
 }
 
+#btnAcept{
+  margin-top: 15%;
+  width: 400px;
+}
+
 .btn-outline-success:hover {
-  background-color: var(--azulopac);
-  border-color: var(--azulopac);
+  background-color: #0d6d00;
+  border-color: #0d6d00;
 }
 
 section {
@@ -297,11 +308,6 @@ td {
   padding: 5%;
 }
 
-.btn-success {
-  margin-top: 15%;
-  width: 400px;
-}
-
 .inputConfig {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -313,6 +319,13 @@ td {
 .labelConfig {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#importe{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-left: 10%;
+    padding-top: 10px; /* Ajusta según necesites espacio arriba */
 }
 
 #modal2 {
@@ -331,6 +344,25 @@ td {
   width: 400px;
   height: 60%;
   margin-left: 40%;
+}
+
+.modal-body {
+  position: relative;
+  display: inline-block;
+  margin-left: 7%;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.importe {
+  padding-left: 25px; /* Espacio para el símbolo de peso */
+  text-align: right;
 }
 
 /* Consultas de medios para hacer el diseño responsivo */

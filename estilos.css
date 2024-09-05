@@ -369,6 +369,24 @@ td {
   text-align: right;
 }
 
+.col{
+  color: #000000;
+}
+  
+#importe-total{
+  width: 150px;
+}
+
+.importefinal{
+  margin-left: 50%;
+  margin-bottom: 30px;
+  width: 150px;
+}
+
+.form-group-inline label {
+  margin-bottom: 0; /* Elimina el margen inferior del label */
+}
+
 /* Consultas de medios para hacer el diseño responsivo */
 @media (max-width: 768px) {
   .MenuPrincipal {

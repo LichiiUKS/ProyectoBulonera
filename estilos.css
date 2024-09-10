@@ -337,7 +337,7 @@ td {
   top: 1%;
 }
 
-.btn-outline-secondary {
+.btnremito {
   margin-left: 44.5%;
   padding: 5px 20px;
   font-size: 25px;
@@ -385,6 +385,17 @@ td {
 
 .form-group-inline label {
   margin-bottom: 0; /* Elimina el margen inferior del label */
+}
+
+#boton8{
+  border: 0px;
+  margin-left: 215px;
+  padding: 5px 20px;
+}
+
+#boton8:hover{
+  background-color: #0d6d00;
+  border-color: #0d6d00;
 }
 
 /* Consultas de medios para hacer el diseño responsivo */

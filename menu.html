@@ -148,6 +148,10 @@
               <label for="cuit" class="form-label">CUIT</label>
               <input type="text" id="cuit" class="form-control" aria-label="CUIT" disabled>
             </div>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">CUIT</span>
+              <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"  minlength="13" maxlength="13" required pattern="[0-9-]+">
           </div>
 
           <!-- Tabla -->
@@ -282,7 +286,6 @@
         <th class="Columnas">Fecha de ingreso</th>
         <th class="Columnas">CUIT</th>
         <th class="Columnas">Domicilio</th>
-        <th class="Columnas">Condición IVA</th>
       </tr>
 
       <tr id="columclient" contenteditable="false">
@@ -291,7 +294,6 @@
         <td class="Columnas" contenteditable="false">30/05/2024</td>
         <td class="Columnas" contenteditable="false">20-45047354-8</td>
         <td class="Columnas" contenteditable="false">Eva Perón 255</td>
-        <td class="Columnas" contenteditable="false">Monotributo</td>
       </tr>
 
       <tr>
@@ -300,20 +302,9 @@
         <td class="Columnas" contenteditable="false">31/05/2024</td>
         <td class="Columnas" contenteditable="false">20-45616591-6</td>
         <td class="Columnas" contenteditable="false">Carmen Gadea 680</td>
-        <td class="Columnas" contenteditable="false">IVA Inscripto</td>
       </tr>
 
       <tr>
-        <td class="Columnas" contenteditable="false"></td>
-        <td class="Columnas" contenteditable="false"></td>
-        <td class="Columnas" contenteditable="false"></td>
-        <td class="Columnas" contenteditable="false"></td>
-        <td class="Columnas" contenteditable="false"></td>
-        <td class="Columnas" contenteditable="false"></td>
-      </tr>
-
-      <tr>
-        <td class="Columnas" contenteditable="false"></td>
         <td class="Columnas" contenteditable="false"></td>
         <td class="Columnas" contenteditable="false"></td>
         <td class="Columnas" contenteditable="false"></td>
@@ -323,6 +314,13 @@
 
       <tr>
         <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+        <td class="Columnas" contenteditable="false"></td>
+      </tr>
+
+      <tr>
         <td class="Columnas" contenteditable="false"></td>
         <td class="Columnas" contenteditable="false"></td>
         <td class="Columnas" contenteditable="false"></td>
@@ -342,16 +340,12 @@
     <TABLE class="table tablita">
       <tr class="Columnas ">
         <th class="Columnas">Fecha operación</th>
-        <th class="Columnas">Detalle</th>
-        <th class="Columnas">Cantidad</th>
         <th class="Columnas">Debe</th>
         <th class="Columnas">Haber</th>
         <th class="Columnas">Saldo</th>
       </tr>
       <tr>
         <td class="Columnas" contenteditable="true">15/05/2024</td>
-        <td class="Columnas" contenteditable="true">Tornillos</td>
-        <td class="Columnas" contenteditable="true">3</td>
         <td class="Columnas" contenteditable="true">1000</td>
         <td class="Columnas" contenteditable="true"></td>
         <td class="Columnas" contenteditable="true"></td>
@@ -359,31 +353,23 @@
       <tr>
         <td class="Columnas" contenteditable="true">16/05/2024</td>
         <td class="Columnas" contenteditable="true"></td>
-        <td class="Columnas" contenteditable="true"></td>
-        <td class="Columnas" contenteditable="true"></td>
         <td class="Columnas" contenteditable="true">600</td>
         <td class="Columnas" contenteditable="true"></td>
       </tr>
       <tr>
         <td class="Columnas" contenteditable="true">17/05/2024</td>
         <td class="Columnas" contenteditable="true"></td>
-        <td class="Columnas" contenteditable="true"></td>
-        <td class="Columnas" contenteditable="true"></td>
         <td class="Columnas" contenteditable="true">300</td>
         <td class="Columnas" contenteditable="true"></td>
       </tr>
       <tr>
         <td class="Columnas" contenteditable="true">18/05/2024</td>
-        <td class="Columnas" contenteditable="true"></td>
-        <td class="Columnas" contenteditable="true"></td>
         <td class="Columnas" contenteditable="true">500</td>
         <td class="Columnas" contenteditable="true"></td>
         <td class="Columnas" contenteditable="true"></td>
       </tr>
       <tr>
         <td class="Columnas" contenteditable="true">19/05/2024</td>
-        <td class="Columnas" contenteditable="true"></td>
-        <td class="Columnas" contenteditable="true"></td>
         <td class="Columnas" contenteditable="true"></td>
         <td class="Columnas" contenteditable="true">100</td>
         <td class="Columnas" contenteditable="true"></td>

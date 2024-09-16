@@ -389,13 +389,17 @@ td {
 
 #boton8{
   border: 0px;
-  margin-left: 215px;
+  margin-left: 105px;
   padding: 5px 20px;
 }
 
 #boton8:hover{
   background-color: #0d6d00;
   border-color: #0d6d00;
+}
+
+#boton5, #boton6{
+  width: 150px;
 }
 
 /* Consultas de medios para hacer el diseño responsivo */

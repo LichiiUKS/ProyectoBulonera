@@ -337,7 +337,7 @@ td {
   top: 1%;
 }
 
-.btn-outline-secondary {
+.btnremito {
   margin-left: 44.5%;
   padding: 5px 20px;
   font-size: 25px;
@@ -367,6 +367,35 @@ td {
 .importe {
   padding-left: 25px; /* Espacio para el símbolo de peso */
   text-align: right;
+}
+
+.col{
+  color: #000000;
+}
+  
+#importe-total{
+  width: 150px;
+}
+
+.importefinal{
+  margin-left: 50%;
+  margin-bottom: 30px;
+  width: 150px;
+}
+
+.form-group-inline label {
+  margin-bottom: 0; /* Elimina el margen inferior del label */
+}
+
+#boton8{
+  border: 0px;
+  margin-left: 210px;
+  padding: 5px 20px;
+}
+
+#boton8:hover{
+  background-color: #0d6d00;
+  border-color: #0d6d00;
 }
 
 /* Consultas de medios para hacer el diseño responsivo */

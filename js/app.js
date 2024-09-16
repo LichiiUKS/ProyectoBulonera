@@ -68,6 +68,7 @@ function cambiarBotones(opcion)
     document.getElementById("boton5").style.display = "none";
     document.getElementById("boton6").style.display = "none";
     document.getElementById("boton7").style.display = "none";
+    document.getElementById("boton8").style.display = "none";
 
 
     
@@ -85,6 +86,8 @@ function cambiarBotones(opcion)
         document.getElementById("boton4").style.display = "block";
         document.getElementById("boton5").style.display = "block";
         document.getElementById("boton6").style.display = "block";
+        document.getElementById("boton8").style.display = "block";
+
         break;
     case "opcion3":
         document.getElementById("boton3").style.display = "none";

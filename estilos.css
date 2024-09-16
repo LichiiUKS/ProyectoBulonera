@@ -262,7 +262,6 @@ section:target {
   margin: 0px 10px 0px 30px;
   background-color: #184463;
   color: white;
-  
 }
 
 #opcion5 {
@@ -390,17 +389,13 @@ td {
 
 #boton8{
   border: 0px;
-  margin-left: 100px;
-  padding: 0px 10px;
+  margin-left: 215px;
+  padding: 5px 20px;
 }
 
 #boton8:hover{
   background-color: #0d6d00;
   border-color: #0d6d00;
-}
-
-#boton5, #boton6{
-  width: 150px;
 }
 
 /* Consultas de medios para hacer el diseño responsivo */

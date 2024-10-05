@@ -11,7 +11,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -28,20 +27,18 @@ public class cuenta_corriente implements Serializable {
     private int debe_cc, haber_cc, saldo_cc;
     @Temporal(TemporalType.DATE)
     private Date fecha_cc;
-    @OneToOne
-    private cabecera_remito cabeceraremito;
-    
+
     public cuenta_corriente()
     {
     }
-
-    public cuenta_corriente(int id_cc, int debe_cc, int haber_cc, int saldo_cc, Date fecha_cc, cabecera_remito cabeceraremito) {
+    
+    public cuenta_corriente(int id_cc, int debe_cc, int haber_cc, int saldo_cc, Date fecha_cc)
+    {
         this.id_cc = id_cc;
         this.debe_cc = debe_cc;
         this.haber_cc = haber_cc;
         this.saldo_cc = saldo_cc;
         this.fecha_cc = fecha_cc;
-        this.cabeceraremito = cabeceraremito;
     }
 
     public int getId_cc() {
@@ -54,14 +51,6 @@ public class cuenta_corriente implements Serializable {
 
     public int getDebe_cc() {
         return debe_cc;
-    }
-
-    public cabecera_remito getCabeceraremito() {
-        return cabeceraremito;
-    }
-
-    public void setCabeceraremito(cabecera_remito cabeceraremito) {
-        this.cabeceraremito = cabeceraremito;
     }
 
     public void setDebe_cc(int debe_cc) {
@@ -91,5 +80,7 @@ public class cuenta_corriente implements Serializable {
     public void setFecha_cc(Date fecha_cc) {
         this.fecha_cc = fecha_cc;
     }
+    
+    
     
 }

@@ -5,13 +5,11 @@
 package Bulonera.logica;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 /**
  *
@@ -26,12 +24,6 @@ public class cabecera_remito implements Serializable {
     private int nro_cliente;
     private int cuit_cliente, nro_remito;
     private String razon_social;
-    
-    @OneToMany(mappedBy = "cabecrem")
-    private ArrayList<detalle_remito> listadetalles;
-    
-    
-    
 
     @Override
     public String toString() {

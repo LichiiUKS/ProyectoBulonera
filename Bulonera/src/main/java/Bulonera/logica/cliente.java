@@ -5,12 +5,14 @@
 package Bulonera.logica;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -28,20 +30,32 @@ public class cliente implements Serializable {
     private String razon_social, domicilio_cliente;
     @Temporal(TemporalType.DATE)
     private Date fecha_ingreso;
+    
+    @OneToMany
+    private ArrayList<pago> listaPagos_c;
 
     public cliente(){
         
     }
-    
-    public cliente(int nro_client, int dni_cliente, int cuit_cliente, String razon_social, String domicilio_cliente, Date fecha_ingreso) {
+
+    public cliente(int nro_client, int dni_cliente, int cuit_cliente, String razon_social, String domicilio_cliente, Date fecha_ingreso, ArrayList<pago> listaPagos_c) {
         this.nro_client = nro_client;
         this.dni_cliente = dni_cliente;
         this.cuit_cliente = cuit_cliente;
         this.razon_social = razon_social;
         this.domicilio_cliente = domicilio_cliente;
         this.fecha_ingreso = fecha_ingreso;
+        this.listaPagos_c = listaPagos_c;
     }
 
+    public ArrayList<pago> getListaPagos_c() {
+        return listaPagos_c;
+    }
+
+    public void setListaPagos_c(ArrayList<pago> listaPagos_c) {
+        this.listaPagos_c = listaPagos_c;
+    }
+    
     public int getNro_client() {
         return nro_client;
     }
@@ -88,6 +102,14 @@ public class cliente implements Serializable {
 
     public void setFecha_ingreso(Date fecha_ingreso) {
         this.fecha_ingreso = fecha_ingreso;
+    }
+
+    public void add(cliente cliente) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void remove(cliente cliente) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

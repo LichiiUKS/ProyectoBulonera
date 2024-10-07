@@ -5,27 +5,28 @@
 package Bulonera.Persistence;
 
 import Bulonera.Persistence.exceptions.NonexistentEntityException;
-import Bulonera.logica.pago;
 import java.io.Serializable;
+import javax.persistence.Query;
+import javax.persistence.EntityNotFoundException;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import Bulonera.logica.cliente;
+import Bulonera.logica.pago;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.Query;
-import javax.persistence.EntityNotFoundException;
 import javax.persistence.Persistence;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
 
 /**
  *
- * @author tobi2
+ * @author Alumno
  */
 public class pagoJpaController implements Serializable {
 
     public pagoJpaController() {
         emf = Persistence.createEntityManagerFactory("buloneraPU");
     }
-
+    
     public pagoJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
@@ -40,7 +41,16 @@ public class pagoJpaController implements Serializable {
         try {
             em = getEntityManager();
             em.getTransaction().begin();
+            cliente cliente_pago = pago.getCliente_pago();
+            if (cliente_pago != null) {
+                cliente_pago = em.getReference(cliente_pago.getClass(), cliente_pago.getNro_client());
+                pago.setCliente_pago(cliente_pago);
+            }
             em.persist(pago);
+            if (cliente_pago != null) {
+                cliente_pago.getListaPagos_c().add(pago);
+                cliente_pago = em.merge(cliente_pago);
+            }
             em.getTransaction().commit();
         } finally {
             if (em != null) {
@@ -54,7 +64,22 @@ public class pagoJpaController implements Serializable {
         try {
             em = getEntityManager();
             em.getTransaction().begin();
+            pago persistentpago = em.find(pago.class, pago.getId_pago());
+            cliente cliente_pagoOld = persistentpago.getCliente_pago();
+            cliente cliente_pagoNew = pago.getCliente_pago();
+            if (cliente_pagoNew != null) {
+                cliente_pagoNew = em.getReference(cliente_pagoNew.getClass(), cliente_pagoNew.getNro_client());
+                pago.setCliente_pago(cliente_pagoNew);
+            }
             pago = em.merge(pago);
+            if (cliente_pagoOld != null && !cliente_pagoOld.equals(cliente_pagoNew)) {
+                cliente_pagoOld.getListaPagos_c().remove(pago);
+                cliente_pagoOld = em.merge(cliente_pagoOld);
+            }
+            if (cliente_pagoNew != null && !cliente_pagoNew.equals(cliente_pagoOld)) {
+                cliente_pagoNew.getListaPagos_c().add(pago);
+                cliente_pagoNew = em.merge(cliente_pagoNew);
+            }
             em.getTransaction().commit();
         } catch (Exception ex) {
             String msg = ex.getLocalizedMessage();
@@ -83,6 +108,11 @@ public class pagoJpaController implements Serializable {
                 pago.getId_pago();
             } catch (EntityNotFoundException enfe) {
                 throw new NonexistentEntityException("The pago with id " + id + " no longer exists.", enfe);
+            }
+            cliente cliente_pago = pago.getCliente_pago();
+            if (cliente_pago != null) {
+                cliente_pago.getListaPagos_c().remove(pago);
+                cliente_pago = em.merge(cliente_pago);
             }
             em.remove(pago);
             em.getTransaction().commit();

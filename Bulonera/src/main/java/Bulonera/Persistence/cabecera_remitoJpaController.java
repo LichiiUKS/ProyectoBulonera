@@ -18,15 +18,14 @@ import javax.persistence.criteria.Root;
 
 /**
  *
- * @author tobi2
+ * @author Alumno
  */
 public class cabecera_remitoJpaController implements Serializable {
 
     public cabecera_remitoJpaController() {
         emf = Persistence.createEntityManagerFactory("buloneraPU");
     }
-
-
+    
     public cabecera_remitoJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }

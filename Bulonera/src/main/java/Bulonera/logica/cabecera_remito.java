@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -24,21 +25,33 @@ public class cabecera_remito implements Serializable {
     private int nro_cliente;
     private int cuit_cliente, nro_remito;
     private String razon_social;
+    
+    @OneToOne
+    private cliente cliente_cabecera;
 
     @Override
     public String toString() {
-        return "cabecera_remito{" + "id_remito=" + id_remito + ", nro_cliente=" + nro_cliente + ", cuit_cliente=" + cuit_cliente + ", nro_remito=" + nro_remito + ", razon_social=" + razon_social + '}';
+        return "cabecera_remito{" + "id_remito=" + id_remito + ", nro_cliente=" + nro_cliente + ", cuit_cliente=" + cuit_cliente + ", nro_remito=" + nro_remito + ", razon_social=" + razon_social + ", cliente_cabecera=" + cliente_cabecera + '}';
     }
     
     public cabecera_remito(){
     }
 
-    public cabecera_remito(int id_remito, int nro_cliente, int cuit_cliente, int nro_remito, String razon_social) {
+    public cabecera_remito(int id_remito, int nro_cliente, int cuit_cliente, int nro_remito, String razon_social, cliente cliente_cabecera) {
         this.id_remito = id_remito;
         this.nro_cliente = nro_cliente;
         this.cuit_cliente = cuit_cliente;
         this.nro_remito = nro_remito;
         this.razon_social = razon_social;
+        this.cliente_cabecera = cliente_cabecera;
+    }
+
+    public cliente getCliente_cabecera() {
+        return cliente_cabecera;
+    }
+
+    public void setCliente_cabecera(cliente cliente_cabecera) {
+        this.cliente_cabecera = cliente_cabecera;
     }
 
     public int getId_remito() {
